@@ -4,7 +4,7 @@ const os = require('os');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
 
-const SERVER_URL = process.env.LICENSE_GUARD_SERVER_URL || 'http://64.90.20.244:8443';
+const SERVER_URL = process.env.LICENSE_GUARD_SERVER_URL || 'http://154.222.24.81:8443';
 const EXPECTED_CODE = 'CXQC0168';
 
 const PUBLIC_KEY_PEM = `-----BEGIN PUBLIC KEY-----

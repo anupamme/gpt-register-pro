@@ -156,16 +156,20 @@ gpt-register-pro/
 
 ### 桌面版
 
-1. 从 [Releases](https://github.com/your-org/gpt-register-pro/releases) 下载安装包（exe / msi / portable）
+1. 从 [Releases](https://github.com/cxqc168-wq/gpt-register-pro/releases/latest) 下载最新版安装包（exe / msi / portable）
 2. 安装并启动
 3. 在「后台配置」填写接码 API Key 和邮箱配置
 4. 在「控制台」点击开始
+
+自 v1.0.1 起，桌面版默认授权服务为 `http://154.222.24.81:8443`，沿用原有签名公钥和激活码。若旧版激活时提示「连接激活服务器失败」，请下载 v1.0.1 或更新版本，退出旧程序后安装或使用新版便携程序，再重新激活。已下载的旧程序不会自动更新授权地址。
+
+自行部署时可通过环境变量 `LICENSE_GUARD_SERVER_URL` 覆盖授权服务地址；该服务必须使用与客户端内置公钥匹配的签名私钥。
 
 ### 源码运行
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-org/gpt-register-pro.git
+git clone https://github.com/cxqc168-wq/gpt-register-pro.git
 cd gpt-register-pro
 
 # 安装依赖
